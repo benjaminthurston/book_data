@@ -22,11 +22,11 @@ function checkBooksForMatch(){
     book = books[i];
     // compare title to input search text
     if (book.title === search){
-      console.log('match found')
+      //console.log('match found')
       // if match create html > message
       message = getBookReport(book);
       // print message to page
-      // print(message);
+      print(message);
     }
   }
 }
@@ -36,7 +36,7 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 function getBookReport(book){
-  //console.log('getbook called with ', book)
+  //aconsole.log('getbook called with ', book)
 
   var report = '<h2>Title: ' + book.title + '</h2>';
   report += '<p>Author: ' + book.author + '</p>';
